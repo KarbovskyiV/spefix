@@ -35,7 +35,7 @@
 @include('navbar')
 @include('modal_search')
 @include('hero')
-@include('vesitable_shop')
+@include('vesitable_shop', ['products' => $products])
 @include('banner')
 @include('fact')
 @include('footer')
