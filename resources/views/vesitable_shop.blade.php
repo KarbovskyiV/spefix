@@ -7,7 +7,7 @@
             @foreach($products as $product)
                 <div class="border border-primary rounded position-relative vesitable-item">
                     <div class="vesitable-img">
-                        <img src="{{ URL('images/' . $product->photo) }}" class="img-fluid w-100 rounded-top"
+                        <img src="{{ URL($product->photo) }}" class="img-fluid w-100 rounded-top"
                              alt="{{ $product->name }}">
                 </div>
                     <div class="text-white bg-primary px-3 py-1 rounded position-absolute"

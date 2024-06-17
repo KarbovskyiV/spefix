@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('preview_text');
             $table->text('description')->nullable();
             $table->float('price')->default(0);
-            $table->string('photo')->nullable();
+            $table->string('photo');
             $table->timestamps();
         });
     }

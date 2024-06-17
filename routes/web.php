@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LiteDashboardController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ProductController::class, 'index']);
+
+Route::get('/lite_dashboard', [LiteDashboardController::class, 'index'])->name('dashboard.home');
+Route::post('/lite_dashboard', [LiteDashboardController::class, 'store'])->name('products.store');
+Route::delete('/lite_dashboard/{product}', [LiteDashboardController::class, 'destroy'])->name('products.destroy');

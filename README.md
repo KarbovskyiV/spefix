@@ -5,3 +5,6 @@
 ### 3.Реалізувати LITE DASHBOARD, де можна ці товари додавати/видаляти. Фото, опис та ціну.
 
 PHP + Laravel
+
+# composer install
+# php artisan migrate
